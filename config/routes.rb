@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   end
 
   resources :todos
-  root 'todos#index'
+  root 'todos#welcome'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
