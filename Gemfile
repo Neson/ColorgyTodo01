@@ -32,6 +32,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Load environment variables from `.env`
+gem 'dotenv-rails'
+
 gem 'devise', '~> 3.4.0'
 
 group :development, :test do
