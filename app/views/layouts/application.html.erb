@@ -15,8 +15,7 @@
 <p class="user-actions">
   <%= link_to("Home", root_path) %>
   <% if current_user.blank? %>
-    <%= link_to("Sign In", new_user_session_path) %>
-    <%= link_to("Sign Up", new_user_registration_path) %>
+    <%= link_to "Sign in with Colorgy", user_omniauth_authorize_path(:colorgy) %>
   <% else %>
     Hello, <%= current_user.email %>
     <%= link_to("Log Out", destroy_user_session_path, method: :delete) %>
