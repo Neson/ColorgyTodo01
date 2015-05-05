@@ -100,7 +100,7 @@ GEM
     omniauth (1.2.2)
       hashie (>= 1.2, < 4)
       rack (~> 1.0)
-    omniauth-colorgy-oauth2 (0.1.1)
+    omniauth-colorgy-oauth2 (0.1.2)
       jwt (>= 1.0.0)
       omniauth (>= 1.1.1)
       omniauth-oauth2 (>= 1.1.1)

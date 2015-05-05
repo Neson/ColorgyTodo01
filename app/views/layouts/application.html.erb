@@ -18,7 +18,7 @@
     <%= link_to "Sign in with Colorgy", user_omniauth_authorize_path(:colorgy) %>
   <% else %>
     Hello, <%= current_user.email %>
-    <%= link_to("Log Out", destroy_user_session_path, method: :delete) %>
+    <%= link_to("Log Out", sign_out_url, method: :delete) %>
   <% end %>
 </p>
 
