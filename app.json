@@ -1,0 +1,19 @@
+{
+  "name": "ColorgyTodo01",
+  "description": "A simple Rails app to demonstrate the Colorgy OAuth 2.0 SSO API.",
+  "addons": [
+    "heroku-postgresql:hobby-dev"
+  ],
+  "scripts": {
+    "postdeploy": "bin/rake db:setup"
+  },
+  "success_url": "/",
+  "env": {
+    "APP_ID": {
+      "description": "The Application ID of your app. Get this on https://colorgy.io/oauth/applications ! Hint: use https://[your_app_domain]/users/auth/colorgy/callback (e.g. https://colorgytodo.herokuapps.com/users/auth/colorgy/callback) as the callback URL."
+    },
+    "APP_SECRET": {
+      "description": "The Application Secret of your app. Get this on https://colorgy.io/oauth/applications !"
+    }
+  }
+}

@@ -12,6 +12,11 @@ Dir.chdir APP_ROOT do
   system "gem install bundler --conservative"
   system "bundle check || bundle install"
 
+  puts "\n== Copying .env from .sample.env =="
+  unless File.exist?(".env")
+    system "cp .sample.env .env"
+  end
+
   # puts "\n== Copying sample files =="
   # unless File.exist?("config/database.yml")
   #   system "cp config/database.yml.sample config/database.yml"
